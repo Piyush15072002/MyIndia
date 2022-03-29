@@ -1,0 +1,343 @@
+
+/* Navbar */
+
+.navbar{
+    background-color:black;
+    height:10vh;
+    width:100%;
+}
+.navLinkS{
+    height:100% ;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+.navLink{
+    margin-top:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(168, 0, 168);
+    transition: 0.2s;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+.navLink:hover{
+    color:rgb(247, 0, 255);
+    transform: translateY(-2px);
+}
+
+
+/* all content */
+
+.base {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:purple;
+}
+
+/* landing */
+
+.landing{
+    height:70vh;
+    width:100%;
+    background-color:rgb(20, 20, 20);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+.landing .heading{
+
+    width: 80%;
+    margin-top:15px;
+   
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  
+}
+.landing .heading h1{
+    font-size: 70px;
+}
+
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #de03fb;
+    }
+}
+
+.landing .button{
+    display: flex;   
+    justify-content: space-around;
+    transition: 0.2s;
+
+}
+.landing .button a{
+    margin-top: 100px;
+    text-decoration: none;
+
+    color:white;
+
+    background-color:rgb(0, 140, 255);
+
+    border: 2px solid rgb(0, 140, 255);
+    padding: 15px 30px;
+    border-radius: 40px 40px 40px 40px;
+
+    transition: 0.2s;
+    
+}
+.landing .button:hover{
+    transform: translateY(-2px);
+    
+}
+.landing .button a:hover{
+    color:yellow;
+    background-color:rgb(0, 71, 119);
+    border: 2px solid rgb(0, 71, 119);
+    transform: translateY(-1px);
+    
+}
+
+/* Carousel */
+
+.main{
+    height:"50vh";
+    width:100%;
+}
+
+
+/* Content */
+
+.content{
+    height:1000px;
+    width: 100%;
+    background-color: rgb(225, 0, 255);
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+
+.content h3{
+    font-size: 100px;
+    color: rgb(255, 210, 210);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 100px;
+}
+.content h3:hover{
+    color: rgb(255, 255, 255);
+    cursor:default;
+}
+.content .item {
+    height: 100px;
+    width: 50%;
+    border: 2px solid black;
+
+    margin-bottom:50px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    background-color:rgb(204, 0, 255);
+
+    transition:0.3s;
+
+    
+}
+.content .item:hover{
+    background-color:rgb(109, 0, 91);
+    transform: translateX(2px);
+    transform: translateY(2px);
+    border-radius: 2% 2% 2% 2%;
+    border-radius: 30px;
+}
+.content .item a {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.2s;
+    
+}
+.content .item a:hover{
+    color:#ffffff;
+    
+}
+
+
+/* About us */
+
+.aboutus {
+    height:120vh;
+    width:80%;
+    background-color:rgb(255, 85, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    padding:100px;
+    margin: 100px;
+
+}
+
+.aboutus h1{
+    font-size:5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.aboutus p{
+    font-size:1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(170, 0, 113);
+    
+}
+/* Contact us */
+
+.contact {
+    height:120vh;
+    width:80%;
+    background-color:rgb(255, 85, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    padding:100px;
+    margin: 100px;
+
+}
+
+.contact h1{
+    font-size:5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p{
+    font-size:1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(170, 0, 113);
+    
+}
+/* North */
+
+.north,.western, .central, .eastern {
+    height:120vh;
+    width:80%;
+    background-color:rgb(255, 85, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    padding:100px;
+    margin: 100px;
+
+}
+
+.north h1,.western h1, .central h1, .eastern h1{
+    font-size:5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.north p,.western p, .central p, .eastern p{
+    font-size:1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(170, 0, 113);
+    
+}
+
+/* South */
+
+.south {
+    height:120vh;
+    width:80%;
+    background-color:rgb(255, 85, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    padding:100px;
+    margin: 100px;
+
+}
+
+.south h1{
+    font-size:5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.south p{
+    font-size:1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(170, 0, 113);
+    
+}
+
+/* footer */
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color:black;
+    color:rgb(194, 194, 194);
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .f1{
+    height: 100%;
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:120px;
+
+}
+.footer .f2{
+    height: 30%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer .f2 a{
+    text-decoration: none;
+    color:rgb(148, 148, 148);
+}
+.footer .f2 a:hover{
+    color:rgb(255, 255, 255);
+}
